@@ -1,0 +1,63 @@
+<div class="card-content"> <div class="entry-title mb-gutter last:mb-0">
+<h1>Midnight Sun CTF 2025 Write-up - Cemoni</h1> </div>
+<div class="entry-metas mb-half-gutter last:mb-0">
+<div class="yuki-article-content yuki-entry-content clearfix mx-auto prose prose-yuki">
+<p><strong>Categories:</strong> Misc</p>
+<p><em><strong>URL</strong>: cccemoni.play.hfsc.tf:11223</em></p>
+<p>It seems the challenge wants us to play and solve.Do not be fooled by its apparent simplicity.</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-986" decoding="async" height="436" sizes="(max-width: 1024px) 100vw, 1024px" src="1.png" width="1024"/></figure>
+<p>Although it was not visible because the CTF had ended, the flag could be seen illegibly in the middle of the site</p>
+<pre class="wp-block-code"><code><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)"><em>&lt;!DOCTYPE html&gt;</em>
+&lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">html</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)"> lang="</mark><mark class="has-inline-color has-vivid-cyan-blue-color" style="background-color:rgba(0, 0, 0, 0)">en</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">"&gt;
+&lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">head</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+    &lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">meta</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)"> charset="</mark><mark class="has-inline-color has-vivid-cyan-blue-color" style="background-color:rgba(0, 0, 0, 0)">UTF-8</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">"&gt;
+    &lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">meta</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)"> name="</mark><mark class="has-inline-color has-vivid-cyan-blue-color" style="background-color:rgba(0, 0, 0, 0)">viewport</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">" content="</mark><mark class="has-inline-color has-vivid-cyan-blue-color" style="background-color:rgba(0, 0, 0, 0)">width=device-width, initial-scale=1.0</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">"&gt;
+    &lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">title</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;Glotchy Flag&lt;/</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">title</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+    &lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">style</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-image: url('/bg.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container {
+            width: 90%;
+            max-width: 2100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #challengeImage {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            image-rendering: pixelated; /* Keeps pixels sharp */
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+    &lt;/</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">style</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+&lt;/</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">head</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+&lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">body</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+    &lt;</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">div</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)"> class="</mark><mark class="has-inline-color has-vivid-cyan-blue-color" style="background-color:rgba(0, 0, 0, 0)">image-container</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">"&gt;
+        </mark><mark class="has-inline-color" style="background-color:#fcb900">&lt;img id="challengeImage" src="/flag.png" alt="Fr33 Fl4G!"&gt;</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">
+    &lt;/</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">div</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+&lt;/</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">body</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;
+&lt;/</mark><mark class="has-inline-color has-vivid-red-color" style="background-color:rgba(0, 0, 0, 0)">html</mark><mark class="has-inline-color has-white-color" style="background-color:rgba(0, 0, 0, 0)">&gt;</mark></code></pre>
+<p>Of course, download /flag.png and see what is going on.</p>
+<figure class="wp-block-image size-full is-resized"><img alt="" class="wp-image-992" decoding="async" height="163" sizes="(max-width: 957px) 100vw, 957px" src="2.png" style="width:939px;height:auto" width="957"/><figcaption class="wp-element-caption"><sub>flag.png</sub></figcaption></figure>
+<p>It is definitely a flag that is not fully understood. It seems possible to access the flag by changing the image using image manipulation tools.</p>
+<figure class="wp-block-image size-full"><a href="https://incoherency.co.uk/image-steganography/#unhide"><img alt="" class="wp-image-993" decoding="async" height="671" loading="lazy" sizes="auto, (max-width: 760px) 100vw, 760px" src="3.png" width="760"/></a></figure>
+<p>But <code>flag.png</code> still does not give a full flag. So I decided to try another image tool. I definitely tried a lot of different flags and finally decided on this one.</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-1004" decoding="async" height="396" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="4.png" width="1024"/></figure>
+<h5 class="wp-block-heading"><strong>FLAG</strong>: midnight{YUM_SCR4MBL3D_3G6Z!!}</h5>
+<p></p>
+</div>
+</article>
