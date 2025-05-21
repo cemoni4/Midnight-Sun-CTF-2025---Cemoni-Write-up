@@ -77,19 +77,19 @@ When visiting the challenge URL, a webpage is served showing an image in the cen
 
 ### Challenge page as served
 
-![Challenge Page](images/image-12.png)
+![Challenge Page](1.png)
 
 ### `flag.png` initially downloaded
 
-![flag.png](images/image-14.png)
+![flag.png](2.png)
 
 ### Processed flag image after image manipulation
 
-![Processed Flag](images/image-15.png)
+![Processed Flag](3.png)
 
 ### Final flag revealed
 
-![Final Flag](images/image-18.png)
+![Final Flag](4.png)
 
 ## 📢 Solution
 
@@ -103,5 +103,3 @@ Challenge created by the Midnight Sun CTF 2025 team.
 Write-up by Cemoni.
 
 ---
-
-Feel free to contribute or suggest improvements via pull requests!
