@@ -1,6 +1,7 @@
 # 🕛 Midnight Sun CTF 2025 - Cemoni Write-up
 
 This repository contains the write-up for the **Cemoni** challenge from the Midnight Sun CTF 2025.
+
 **Category:** `Misc`
 **Challenge URL:** `cccemoni.play.hfsc.tf:11223`
 
